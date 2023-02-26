@@ -1,0 +1,29 @@
+package main
+
+import (
+	"fmt"
+	"os"
+	"time"
+
+)
+
+// tempo de trabalho/foco
+
+ var tempoTrabalho = 25 * time.Minute
+
+ // tempo de descanso
+
+ var tempoDescanso = 5 * time.Minute
+
+ func main() {
+
+     for {
+                // tempo trabalhando/focado
+                fmt.Println("Comece a trabalhar/focar")
+                time.Sleep(tempoTrabalho)
+
+                // tempo de descanso
+                fmt.Println("Começo do descanso")
+                time.Sleep(tempoDescanso)
+            }
+ }
